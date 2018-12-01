@@ -1,7 +1,9 @@
 ---
 title: Thoughts
-tags: 
-- Thought
+tags:
+  - Thought
+categories:
+  - thoughts
 ---
 
 
