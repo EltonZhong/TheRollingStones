@@ -2,11 +2,11 @@
 My blog.
 
 
-Usage: 
+## Start: 
     ```sh
         npm install && npm start
     ```
-Deploy:
+## Deploy:
     ```sh
         npm deploy
     ```
