@@ -5,6 +5,7 @@ tags:
   - Thought
 categories:
   - thoughts
+cover: http://wwwrollingstones.wpengine.netdna-cdn.com/files/2018/10/VL1-940x484.jpg
 ---
 
 > 你一直说的那个公园已经拆了
