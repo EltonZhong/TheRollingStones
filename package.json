@@ -5,6 +5,10 @@
   "hexo": {
     "version": "3.8.0"
   },
+  "scripts": {
+    "deploy": "hexo clean && hexo generate && hexo deploy",
+    "start": "hexo serve"
+  },
   "dependencies": {
     "hexo": "^3.7.0",
     "hexo-auto-category": "^0.1.6",
