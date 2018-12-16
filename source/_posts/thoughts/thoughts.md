@@ -1,13 +1,11 @@
 ---
 title: Thoughts
+desc: 关于时间我有一点看法
 tags:
   - Thought
 categories:
   - thoughts
 ---
-
-和某个儿子聊天, 发现见一面还真难。
-很多事情没有办法再像以前一样, 真令人沮丧。
 
 > 你一直说的那个公园已经拆了
 
