@@ -5,7 +5,7 @@ tags:
 categories:
   - thoughts
 date: 2018-12-16 17:37:44
-cover: /imgs/abbyroad.jpg
+cover: /imgs/ab.jpg
 ---
 # Hello World.
 这是这个博客的第一篇博文。
