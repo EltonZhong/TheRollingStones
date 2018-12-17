@@ -9,4 +9,4 @@ categories:
 date: 1996-12-21 18:48:31
 ---
 
-Elton Zhong, 一个高尚的人, 一个脱离了低级趣味的人.
+Elton Zhong / ZXN 欢迎你来这里玩~ 
