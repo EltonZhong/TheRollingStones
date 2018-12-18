@@ -10,7 +10,7 @@ date: 2018-12-18 21:37:45
 ---
 
 # About kotlin-multiplatform, Kotlin.js
-After [Setup](/2018/12/18/code/kotlin/KotlinMultiPlatformSetup), we can start to know how to write kotlin-js code.
+After [Setup](https://therollingstones.cn/2018/12/18/code/kotlin/KotlinMultiPlatformSetup), we can start to know how to write kotlin-js code.
 
 Actually, the document you need is [here](https://www.kotlincn.net/docs/reference/dynamic-type.html), but I will talk about something more in this document, and why kotlin.js is better than typescript.
 
@@ -41,7 +41,7 @@ When you call hello() function, you can not call hello with a integer, but after
 ### While, type is not lost(`Why kotlin is greater than typescript`)
 Classes in kotlin will remain, and they will be used in some kotlin grammer, especially in serilization libs. So `Don't use simple objects instead of class object, it's different from typescipt`.
 
-![Example](/imgs/AccountLockDto.png)
+![Example](https://therollingstones.cn/imgs/AccountLockDto.png)
 
 Code may explain better:
 > You are Given a class `A` with a field `a`

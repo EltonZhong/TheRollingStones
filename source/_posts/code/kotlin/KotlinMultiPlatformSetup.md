@@ -126,7 +126,7 @@ Also, you can output it into another dir like node/kotlin_dependencies, and spec
 ## Publish your package!
 When you want to publish your kotlin-js program, you can either publish the kotlin library to maven repository, or publish the generated kotlin.js file. The previous is just the same as publishing other packages to maven repo, but when publishing to npm registry, we should do something more.
 
-[Click here](./Publish.md) To see how to publish a kotlin-js package to npm registry.
+[Click here](https://therollingstones.cn/2018/12/18/code/kotlin/Publish/) To see how to publish a kotlin-js package to npm registry.
 
 ## Documents
 [Kotlin official documents ](https://www.kotlincn.net/docs/reference/multiplatform.html)
