@@ -4,7 +4,7 @@ tags:
   - Code
 categories:
   - code
-desc: Detailed for setting up with kotlin-js
+desc: Detailed for setting up with kotlin-js, to create a extuable node.js application.
 date: 2018-12-18 6:37:45
 ---
 
