@@ -7,6 +7,7 @@ categories:
   - code
 desc: Publish a node.js package written in kotlin to npm registry.
 date: 2018-12-18 22:37:45
+mp3: http://link.hhtjim.com/163/26609785.mp3
 ---
 
 # Publish
@@ -25,7 +26,7 @@ As we've talked [before](https://therollingstones.cn/2018/12/18/code/kotlin/Kotl
 ## So here is the solution:
 Given `node` dir is your root dir for your npm package.
 First, generate all output files to node/kotlin-dependencies dir, and output your program js file to `node/kotlin/main/index.js`:
-```grovvy
+```groovy
 fromPreset(presets.js, 'js', {
     configure(compilations.main) {
         tasks.getByName(compileKotlinTaskName).kotlinOptions {

@@ -6,6 +6,7 @@ categories:
   - code
 desc: Detailed for setting up with kotlin-js, to create an executable node.js application.
 date: 2018-12-18 6:37:45
+mp3: http://link.hhtjim.com/163/26609785.mp3
 ---
 
 # Kotlin multiplatform
@@ -37,7 +38,7 @@ run `kotlinc-js -h` to get detail.
 So when we are using node.js, we should config like below:
 
 ### gradle preset config.
-```
+```groovy
 // The 'js' parameter can be any name
 fromPreset(presets.js, 'js', {
     configure(compilations.main) {
@@ -98,7 +99,7 @@ This is not officially supported, but it really works.
 
 
 So, given the hack way above, we can write a gradle task to move all the js dependencies to node_modules like below:
-```grovvy
+```groovy
 task node(dependsOn: [jsJar, jsTestClasses]) {
     doLast {
         copy {

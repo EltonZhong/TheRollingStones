@@ -7,6 +7,7 @@ categories:
   - code
 desc: the Official document is not detailed. I will talk about something more in this document, and why kotlin.js is better than typescript.
 date: 2018-12-18 21:37:45
+mp3: http://link.hhtjim.com/163/26609785.mp3
 ---
 
 # About kotlin-multiplatform, Kotlin.js
