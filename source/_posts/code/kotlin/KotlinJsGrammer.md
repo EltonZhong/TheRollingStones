@@ -1,6 +1,6 @@
 ---
 title: Kotlin-js features.
-cover: http://www.rollingstones.com/wp-content/themes/rolling-stones-2014/2019/lips.png
+cover: imgs/lips.png
 tags:
   - Code
 categories:

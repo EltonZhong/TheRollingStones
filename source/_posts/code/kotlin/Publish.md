@@ -1,6 +1,6 @@
 ---
 title: Publish kotlin-js package to npm.
-cover: http://wwwrollingstones.wpengine.netdna-cdn.com/files/2018/10/VL1-940x484.jpg
+cover: imgs/theworst.jpg
 tags:
   - Code
 categories:
