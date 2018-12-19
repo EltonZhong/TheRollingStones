@@ -5,7 +5,7 @@ tags:
   - Code
 categories:
   - code
-desc: Official document is not detailed. I will talk about something more in this document, and why kotlin.js is better than typescript.
+desc: the Official document is not detailed. I will talk about something more in this document, and why kotlin.js is better than typescript.
 date: 2018-12-18 21:37:45
 ---
 
@@ -15,7 +15,7 @@ After [Setup](https://therollingstones.cn/2018/12/18/code/kotlin/KotlinMultiPlat
 Actually, the document you need is [here](https://www.kotlincn.net/docs/reference/dynamic-type.html), but I will talk about something more in this document, and why kotlin.js is better than typescript.
 
 ## Compile
-When kotlin code compile to js, the type checking in function parameter is lost, just like typescript.
+When kotlin code compiles to js, the type checking in function parameter is lost, just like typescript.
 ### Type checking in function
 ```kotlin
     fun hello(a: String) {
@@ -28,7 +28,7 @@ Kotlin code above will compile to js below
         process[a];
    }
 ```
-When you call hello() function, you can not call hello with a integer, but after  being compiled to js, you can do this, like below:
+When you call hello() function, you can not call hello with an integer, but after  being compiled to js, you can do this, like below:
 ```js
    function hello(a) {
         process[a];
@@ -38,7 +38,7 @@ When you call hello() function, you can not call hello with a integer, but after
    hello({})
 ```
 
-### While, type is not lost(`Why kotlin is greater than typescript`)
+### While, the type is not lost(`Why kotlin is greater than typescript`)
 Classes in kotlin will remain, and they will be used in some kotlin grammer, especially in serilization libs. So `Don't use simple objects instead of class object, it's different from typescipt`.
 
 ![Example](https://therollingstones.cn/imgs/AccountLockDto.png)
@@ -94,12 +94,12 @@ hello({a: ""})
 // The prefered way is to use class B:
 hello(new B(""))
 ```
-> When typescript compiled to js, all the types are erasered. 
+> When typescript compiled to js, all the types are erased. 
 
 > But in kotlin, it's not.
 
 ## Error handling:
-You can not catch specified error in typescript(`What a shame!`) and js. but you can do it in kotlin.
+You can not catch the specified errors in typescript(`What a shame!`) and js. but you can do it in kotlin.
 
 ### You can write multi Error catching blocks.
 
@@ -140,7 +140,7 @@ try { ... } catch(e: dynamic) {
 
 ## Coroutine
 
-The coroutines in js is just the same as kotlin-common. While you can not call suspend function in js.
+The coroutines in js are just the same as kotlin-common. While you can not call suspend function in js.
 
 So you can transfer api to typical promise call:
 ```
@@ -153,4 +153,4 @@ fun helloApi() = promise {
 }
 ```
 
-For more information, see [here](https://therollingstones.cn/2018/12/16/code/Kotlin/) to get futher explain for kotlin Coroutine.
+For more information, see [here](https://therollingstones.cn/2018/12/16/code/Kotlin/) to get further explain for kotlin Coroutine.
