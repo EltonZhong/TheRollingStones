@@ -4,17 +4,17 @@ tags:
   - Code
 categories:
   - code
-desc: Detailed for setting up with kotlin-js, to create a extuable node.js application.
+desc: Detailed for setting up with kotlin-js, to create an executable node.js application.
 date: 2018-12-18 6:37:45
 ---
 
 # Kotlin multiplatform
-Kotlin multiplatform`(Below we call it kotlinmp for short)` is a feature released in Kotlin1.2. Kotlinmp make you able to `write once, compile everywhere`:
-> You can write same kotlin code and use it in Jvm(of course), Javascript(`Both broswer and node.js`), Native project(`Android, iOS, linux...etc`)
+Kotlin multiplatform`(Below we call it kotlinmp for short)` is a feature released in Kotlin1.2. Kotlinmp makes you able to `write once, compile everywhere`:
+> You can write same kotlin code and use it in Jvm(of course), Javascript(`Both browser and node.js`), Native project(`Android, iOS, linux...etc`)
 
 ## Quick start
 
-Setting up is not diffcult. Follow link below and you can easily start your own mp project.
+Setting up is not difficult. Follow the link below and you can easily start your own mp project.
 [Start Kotlin multiplatform with gradle](https://www.kotlincn.net/docs/reference/building-mpp-with-gradle.html#setting-up-a-multiplatform-project)
 
 
@@ -31,7 +31,7 @@ cd node && npm start
 ```
 
 ## Detail Configurations
-You might find that official documents don't give you example to config to produce a runable js program. Yes, it's reasonable. You can choose to compile js to commonjs used in node, or plainjs used in browser.
+You might find that official documents don't give you an example to config to produce a runnable js program. Yes, it's reasonable. You can choose to compile js to commonjs used in node, or plainjs used in the browser.
 run `kotlinc-js -h` to get detail.
 
 So when we are using node.js, we should config like below:
@@ -70,13 +70,13 @@ fromPreset(presets.js, 'js', {
 ```
 run `gradle build`, and we can get the produced file at node/kotlin/main/index.js
 ### gradle task config
-Get produced index.js is not enough. When we run node index.js, we find that we are lacking of a lot of kotlin.js dependices, like below:
+Get produced index.js is not enough. When we run node index.js, we find that we are lacking a lot of kotlin.js dependencies, like below:
 > Error loading module 'kotlin'
 
-So what should we do? As we all know, we should have all the .js files as dependices. Should we install them like `npm install kotlin`?
+So what should we do? As we all know, we should have all the .js files as dependencies. Should we install them like `npm install kotlin`?
 ***We should never do it***
 
-Kotlin community is not awaire of that they should publish their .js package to npm registry. So It's terrible: when you want to publish your kotlin.js program to npm, you can't, because the packages you depends on is NOT in npm registry.
+Kotlin community is not aware of that they should publish their .js package to npm registry. So It's terrible: when you want to publish your kotlin.js program to npm, you can't, because the packages you depend on is NOT in npm registry.
 
 So how do we solve this?
 There you go.
@@ -88,16 +88,16 @@ touch node_modules/hellokotlin.js
 ```
 
 >> Write js code below, and you can find it working:
- ```
+ ```js
 require('hellokotlin')
 ```
 
 This is not officially supported, but it really works.
 
->You might think that you can install the js file through npm install, well you can't. See[doc](https://docs.npmjs.com/cli/install). Well talk about it in next section.
+>You might think that you can install the js file through npm install, well you can't. See[doc](https://docs.npmjs.com/cli/install). Well, talk about it in the next section.
 
 
-So, given the hack way above, we can write a gradle task to move all the js dependies to node_modules like below:
+So, given the hack way above, we can write a gradle task to move all the js dependencies to node_modules like below:
 ```grovvy
 task node(dependsOn: [jsJar, jsTestClasses]) {
     doLast {
@@ -124,7 +124,7 @@ Also, you can output it into another dir like node/kotlin_dependencies, and spec
 ```
 
 ## Publish your package!
-When you want to publish your kotlin-js program, you can either publish the kotlin library to maven repository, or publish the generated kotlin.js file. The previous is just the same as publishing other packages to maven repo, but when publishing to npm registry, we should do something more.
+When you want to publish your kotlin-js program, you can either publish the kotlin library to maven repository or publish the generated kotlin.js file. The previous is just the same as publishing other packages to maven repo, but when publishing to npm registry, we should do something more.
 
 [Click here](https://therollingstones.cn/2018/12/18/code/kotlin/Publish/) To see how to publish a kotlin-js package to npm registry.
 
