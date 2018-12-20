@@ -1,6 +1,6 @@
 ---
 title: About me
-mp3: 'http://link.hhtjim.com/163/1646175.mp3'
+mp3: http://link.hhtjim.com/xiami/1774068920.mp3
 tags:
   - Thought
 categories:
