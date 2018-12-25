@@ -10,7 +10,7 @@ date: 2018-12-16 21:37:45
 ---
 
 # Kotlin 协程
-本文只是浅析 Kotlin 协程在各平台的实现, 以及跨平台兼容方案。 如果要看Kotlin协程api的用法，请移步[我的另一篇文章](https://www.rollingstones)
+本文只是浅析 Kotlin 协程在各平台的实现, 以及跨平台兼容方案。 如果要看Kotlin协程api的用法，请移步[我的另一篇文章](https://therollingstones.cn/2018/12/25/code/kotlin/KotlinCoroutine/)
 
 言归正传, 我们聊聊"协程".
 
