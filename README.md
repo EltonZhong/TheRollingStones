@@ -1,12 +1,17 @@
 # TheRollingStones
+
 My blog. Powered by Hexo and [My Custom Diaspora](https://github.com/EltonZhong/hexo-theme-diaspora)
 
+## Start
 
-## Start: 
 ```sh
     npm install && npm start
 ```
-## Deploy:
+
+## Deploy
+
+`./git_push.sh`
+
 ```sh
-    npm deploy
+    npm run deploy
 ```
