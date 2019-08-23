@@ -103,6 +103,7 @@ App 创建时都会实例化一个Instrumentation对象, 在Activity之间共享
 
 ### Espresso VS UiAutomator v2 VS UiAuotomator v1
 
+下面的还没写完， 以后再更
 Refrences:
 
 1. [Uiautomator1 vs espresso](https://stackoverflow.com/questions/31076228/android-testing-uiautomator-vs-espresso) (Remeber the answers are talking about uiautomator v1, in 2016)
